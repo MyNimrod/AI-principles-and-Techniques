@@ -14,7 +14,7 @@ This project represents a state space graph for the traveling problem in Ethiopi
 ## Usage
 
 1. **Graph Class**: Initializes a graph with nodes and edges.
-    ```python
+    ```
     visit_ethiopia = Graph(
         dict({
             'Addis Ababa': {'Adama', 'Ambo', 'Debre Berhan'},
