@@ -10,11 +10,12 @@ This project represents a state space graph for the traveling problem in Ethiopi
 - **Problem**: Defines the initial state and goal state.
 - **GraphProblem**: Inherits from Problem and uses a graph to define state transitions.
 - **Node**: Represents a node in the search tree with state, parent, action, and depth attributes.
+- **SearchSolver**: A class to solve the problem using a specified search strategy (BFS or DFS).
 
 ## Usage
 
 1. **Graph Class**: Initializes a graph with nodes and edges.
-    ```
+    ```python
     visit_ethiopia = Graph(
         dict({
             'Addis Ababa': {'Adama', 'Ambo', 'Debre Berhan'},
@@ -35,9 +36,26 @@ This project represents a state space graph for the traveling problem in Ethiopi
     node = Node('Addis Ababa')
     ```
 
+4. **SearchSolver Class**: Solves the problem using the specified search strategy.
+    ```python
+    solver = SearchSolver(visit_ethiopia, 'Addis Ababa', 'Shire', strategy='bfs')
+    final_node = solver.solve()
+    if final_node is not None:
+        print("Breadth First Search Solution:", final_node.solution())
+    else:
+        print("Path does not exist")
+
+    solver = SearchSolver(visit_ethiopia, 'Addis Ababa', 'Shire', strategy='dfs')
+    final_node = solver.solve()
+    if final_node is not None:
+        print("Depth First Search Solution:", final_node.solution())
+    else:
+        print("Path does not exist")
+    ```
+
 ## Running the Code
 
-To run the code, create a Python script and include the provided classes and graph definition. You can then instantiate a problem and explore the state space using the defined methods.
+To run the code, create a Python script and include the provided classes and graph definition. You can then instantiate a problem and explore the state space using the defined methods and strategies.
 
 ## Example
 
@@ -56,3 +74,20 @@ root_node = Node(problem.initial)
 children = root_node.expand(problem)
 for child in children:
     print(child)
+
+# Solve using breadth-first search
+solver = SearchSolver(visit_ethiopia, 'Addis Ababa', 'Shire', strategy='bfs')
+final_node = solver.solve()
+if final_node is not None:
+    print("Breadth First Search Solution:", final_node.solution())
+else:
+    print("Path does not exist")
+
+# Solve using depth-first search
+solver = SearchSolver(visit_ethiopia, 'Addis Ababa', 'Shire', strategy='dfs')
+final_node = solver.solve()
+if final_node is not None:
+    print("Depth First Search Solution:", final_node.solution())
+else:
+    print("Path does not exist")
+
