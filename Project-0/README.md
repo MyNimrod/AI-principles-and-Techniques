@@ -1,6 +1,6 @@
 # Project 0
 
-#### Link to Project is [Project 0](https://inst.eecs.berkeley.edu/~cs188/sp23/projects/proj0/https://inst.eecs.berkeley.edu/~cs188/sp23/projects/proj0/)
+#### Link to Project is [Project 0](https://inst.eecs.berkeley.edu/~cs188/sp23/projects/proj0/)
 
 ## Q1: Addition 
 
