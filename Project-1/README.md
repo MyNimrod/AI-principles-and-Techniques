@@ -21,4 +21,10 @@ Implement the uniform-cost graph search algorithm in the uniformCostSearch funct
 	python pacman.py -l mediumDottedMaze -p StayEastSearchAgent
 	python pacman.py -l mediumScaryMaze -p StayWestSearchAgent
 
+## Q4: A\* search
 
+Implement A\* graph search in the empty function aStarSearch in search.py. A\* takes a heuristic function as an argument. Heuristics take two arguments: a state in the search problem (the main argument), and the problem itself (for reference information). The nullHeuristic heuristic function in search.py is a trivial example.
+
+You can test your A\* implementation on the original problem of finding a path through a maze to a fixed position using the Manhattan distance heuristic (implemented already as manhattanHeuristic in searchAgents.py).
+
+	python pacman.py -l bigMaze -z .5 -p SearchAgent -a fn=astar,heuristic=manhattanHeuristic
