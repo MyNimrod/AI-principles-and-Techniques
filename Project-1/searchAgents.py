@@ -473,8 +473,53 @@ def foodHeuristic(state: Tuple[Tuple, List[List]], problem: FoodSearchProblem):
     problem.heuristicInfo['wallCount']
     """
     position, foodGrid = state
-    "*** YOUR CODE HERE ***"
-    return 0
+    foodList = foodGrid.asList()
+
+    if not foodList:
+        return 0
+
+    # Helper function to compute Manhattan distance
+    def manhattanDistance(xy1, xy2):
+        return abs(xy1[0] - xy2[0]) + abs(xy1[1] - xy2[1])
+
+    # Calculate the minimum spanning tree (MST) cost of the remaining food dots
+    import itertools
+    from heapq import heappush, heappop
+
+    def mstCost(nodes):
+        if len(nodes) == 0:
+            return 0
+
+        mst_cost = 0
+        edges = []
+        visited = set()
+        start_node = nodes[0]
+        visited.add(start_node)
+
+        for node in nodes:
+            if node != start_node:
+                heappush(edges, (manhattanDistance(start_node, node), start_node, node))
+
+        while len(visited) < len(nodes):
+            cost, node1, node2 = heappop(edges)
+            if node2 not in visited:
+                visited.add(node2)
+                mst_cost += cost
+                for node in nodes:
+                    if node != node2 and node not in visited:
+                        heappush(edges, (manhattanDistance(node2, node), node2, node))
+        return mst_cost
+
+    # Calculate the distance to the nearest food dot
+    nearest_food_distance = min(manhattanDistance(position, food) for food in foodList)
+
+    # Calculate the MST cost of the remaining food dots
+    remaining_food_mst_cost = mstCost(foodList)
+
+    # The heuristic cost is the distance to the nearest food dot plus the MST cost of the remaining food dots
+    heuristic_cost = nearest_food_distance + remaining_food_mst_cost
+
+    return heuristic_cost
 
 class ClosestDotSearchAgent(SearchAgent):
     "Search for all food using a sequence of searches"
