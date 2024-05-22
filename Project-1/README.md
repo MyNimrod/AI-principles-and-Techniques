@@ -9,4 +9,7 @@
 		python pacman.py -l mediumMaze -p SearchAgent
 		python pacman.py -l bigMaze -z .5 -p SearchAgent
 	```
+## Q2: Breadth First Search
+
+	Implement the breadth-first search (BFS) algorithm in the breadthFirstSearch function in search.py. Again, write a graph search algorithm that avoids expanding any already visited states. Test your code the same way you did for depth-first search.
 	
