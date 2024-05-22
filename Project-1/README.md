@@ -4,4 +4,9 @@
 
 ## Q1: Finding a Fixed Food Dot using Depth First Search
 
-
+	Your code should quickly find a solution for:
+	```
+python pacman.py -l tinyMaze -p SearchAgent
+python pacman.py -l mediumMaze -p SearchAgent
+python pacman.py -l bigMaze -z .5 -p SearchAgent
+	```
