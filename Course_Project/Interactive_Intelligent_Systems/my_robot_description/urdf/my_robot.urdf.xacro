@@ -1,0 +1,177 @@
+<!-- my_robot.urdf.xacro -->
+<robot name="my_robot" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+    <!-- Define materials -->
+    <material name="blue">
+        <color rgba="0 0 1 1"/>
+    </material>
+    <material name="black">
+        <color rgba="0 0 0 1"/>
+    </material>
+    <material name="red">
+        <color rgba="1 0 0 1"/>
+    </material>
+    <material name="green">
+        <color rgba="0 1 0 1"/>
+    </material>
+    <material name="yellow">
+        <color rgba="1 1 0 1"/>
+    </material>
+
+    <!-- Dummy link to avoid inertia warning -->
+    <link name="dummy_link"/>
+    <joint name="fixed_joint" type="fixed">
+        <parent link="dummy_link"/>
+        <child link="base_link"/>
+    </joint>
+
+    <!-- Properties -->
+    <xacro:property name="wheel_radius" value="0.1"/>
+    <xacro:property name="wheel_width" value="0.05"/>
+    <xacro:property name="base_width" value="0.5"/>
+    <xacro:property name="base_length" value="0.7"/>
+    <xacro:property name="base_height" value="0.2"/>
+
+	<!-- Base Link -->
+	<link name="base_link">
+		<inertial>
+			<mass value="5.0"/>
+			<origin xyz="0 0 0"/>
+			<inertia ixx="0.1" ixy="0.0" ixz="0.0" iyy="0.1" iyz="0.0" izz="0.1"/>
+		</inertial>
+		<visual>
+			<origin xyz="0 0 ${base_height / 2}" rpy="0 0 0"/>
+			<geometry>
+				<box size="${base_length} ${base_width} ${base_height}"/>
+			</geometry>
+			<material name="blue"/>
+		</visual>
+		<collision>
+			<origin xyz="0 0 ${base_height / 2}" rpy="0 0 0"/>
+			<geometry>
+				<box size="${base_length} ${base_width} ${base_height}"/>
+			</geometry>
+		</collision>
+	</link>
+
+
+    <!-- Wheels -->
+    <xacro:macro name="wheel" params="name x y z">
+        <link name="${name}">
+            <inertial>
+                <mass value="1.0"/>
+                <origin xyz="0 0 0"/>
+                <inertia ixx="0.01" ixy="0.0" ixz="0.0" iyy="0.01" iyz="0.0" izz="0.01"/>
+            </inertial>
+            <visual>
+                <origin xyz="0 0 0" rpy="0 0 0"/>
+                <geometry>
+                    <cylinder length="${wheel_width}" radius="${wheel_radius}"/>
+                </geometry>
+                <material name="black"/>
+            </visual>
+            <collision>
+                <origin xyz="0 0 0" rpy="0 0 0"/>
+                <geometry>
+                    <cylinder length="${wheel_width}" radius="${wheel_radius}"/>
+                </geometry>
+            </collision>
+        </link>
+        <joint name="${name}_joint" type="continuous">
+            <parent link="base_link"/>
+            <child link="${name}"/>
+            <origin xyz="${x} ${y} ${z}" rpy="0 0 0"/>
+            <axis xyz="0 1 0"/>
+            <dynamics damping="0.5" friction="0.5"/>
+            <limit effort="10" velocity="10"/>
+        </joint>
+    </xacro:macro>
+
+    <!-- Add Wheels -->
+    <xacro:wheel name="front_wheel" x="0.35" y="0" z="0.05"/>
+    <xacro:wheel name="left_wheel" x="-0.35" y="0.25" z="0.05"/>
+    <xacro:wheel name="right_wheel" x="-0.35" y="-0.25" z="0.05"/>
+
+    <!-- Sensors -->
+    <!-- Proximity Sensor -->
+    <link name="proximity_sensor">
+        <visual>
+            <origin xyz="0 0 0.15" rpy="0 0 0"/>
+            <geometry>
+                <cylinder radius="0.02" length="0.05"/>
+            </geometry>
+            <material name="red"/>
+        </visual>
+    </link>
+    <joint name="proximity_sensor_joint" type="fixed">
+        <parent link="base_link"/>
+        <child link="proximity_sensor"/>
+        <origin xyz="0 0 0.25" rpy="0 0 0"/>
+    </joint>
+
+    <!-- Gyroscope -->
+    <link name="gyroscope">
+        <visual>
+            <origin xyz="0 0 0.1" rpy="0 0 0"/>
+            <geometry>
+                <box size="0.05 0.05 0.05"/>
+            </geometry>
+            <material name="green"/>
+        </visual>
+    </link>
+    <joint name="gyroscope_joint" type="fixed">
+        <parent link="base_link"/>
+        <child link="gyroscope"/>
+        <origin xyz="0 0 0.3" rpy="0 0 0"/>
+    </joint>
+
+    <!-- RGB Camera -->
+    <link name="rgb_camera">
+        <visual>
+            <origin xyz="0 0 0.2" rpy="0 0 0"/>
+            <geometry>
+                <box size="0.05 0.05 0.1"/>
+            </geometry>
+            <material name="yellow"/>
+        </visual>
+    </link>
+    <joint name="rgb_camera_joint" type="fixed">
+        <parent link="base_link"/>
+        <child link="rgb_camera"/>
+        <origin xyz="0 0 0.4" rpy="0 0 0"/>
+    </joint>
+
+    <!-- Additional Sensors (if required) -->
+    <!-- Infrared Sensor -->
+    <link name="infrared_sensor">
+        <visual>
+            <origin xyz="0 0 0.15" rpy="0 0 0"/>
+            <geometry>
+                <cylinder radius="0.02" length="0.05"/>
+            </geometry>
+            <material name="black"/>
+        </visual>
+    </link>
+    <joint name="infrared_sensor_joint" type="fixed">
+        <parent link="base_link"/>
+        <child link="infrared_sensor"/>
+        <origin xyz="0 0.3 0.25" rpy="0 0 0"/>
+    </joint>
+
+    <!-- LIDAR Sensor -->
+    <link name="lidar_sensor">
+        <visual>
+            <origin xyz="0 0 0.1" rpy="0 0 0"/>
+            <geometry>
+                <box size="0.1 0.1 0.1"/>
+            </geometry>
+            <material name="red"/>
+        </visual>
+    </link>
+    <joint name="lidar_sensor_joint" type="fixed">
+        <parent link="base_link"/>
+        <child link="lidar_sensor"/>
+        <origin xyz="0 0.4 0.35" rpy="0 0 0"/>
+    </joint>
+
+</robot>
