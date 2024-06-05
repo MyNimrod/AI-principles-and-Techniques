@@ -54,10 +54,10 @@ Assume an adversary joins the Traveling Ethiopia Search Problem as shown in Figu
 
 ## Figures
 
-- **Figure 1**: Placeholder for A generic state space graph for traveling Ethiopia search problem.
-- **Figure 2**: Placeholder for A state space graph with backward cost for the traveling Ethiopia search problem.
-- **Figure 3**: Placeholder for A state space graph with heuristic and backward cost.
-- **Figure 4**: Placeholder for A state space graph showing an adversary in the Traveling Ethiopia search problem.
+	![Figure 1](https://github.com/MyNimrod/AI-principles-and-Techniques/blob/main/Course_Project/Figure%201%20Traveling%20Ethiopia.png)
+	![Figure 2](https://github.com/MyNimrod/AI-principles-and-Techniques/blob/main/Course_Project/Figure%202%20Traveling%20Ethiopia.jpg)
+	![Figure 3](https://github.com/MyNimrod/AI-principles-and-Techniques/blob/main/Course_Project/Figure%203%20Traveling%20Ethiopia.jpg)
+	![Figure 4](https://github.com/MyNimrod/AI-principles-and-Techniques/blob/main/Course_Project/Figure%204%20Adversary%20Traveling%20Ethiopia.jpg)
 
 (Note: The figures will be inserted in the corresponding sections of the Jupyter notebook.)
 
