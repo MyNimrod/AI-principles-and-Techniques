@@ -54,9 +54,19 @@ Assume an adversary joins the Traveling Ethiopia Search Problem as shown in Figu
 
 ## Figures
 
+#### 1. Figure 1 Traveling Ethiopia
+
 ![Figure 1](https://github.com/MyNimrod/AI-principles-and-Techniques/blob/main/Course_Project/Figure%201%20Traveling%20Ethiopia.png)
+
+#### 2. Figure 2 Traveling Ethiopia
+
 ![Figure 2](https://github.com/MyNimrod/AI-principles-and-Techniques/blob/main/Course_Project/Figure%202%20Traveling%20Ethiopia.jpg)
+
+#### 3. Figure 3 Traveling Ethiopia
+
 ![Figure 3](https://github.com/MyNimrod/AI-principles-and-Techniques/blob/main/Course_Project/Figure%203%20Traveling%20Ethiopia.jpg)
+
+#### 4. Figure 4 Adversarial Traveling Ethiopia
 ![Figure 4](https://github.com/MyNimrod/AI-principles-and-Techniques/blob/main/Course_Project/Figure%204%20Adversary%20Traveling%20Ethiopia.jpg)
 
 (Note: The figures are available in the repository.)
