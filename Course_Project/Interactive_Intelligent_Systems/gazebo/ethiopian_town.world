@@ -55,3 +55,82 @@
         </visual>
       </link>
     </model>
+	<model name="Debre_Berhan">
+      <pose>0 -130 0 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>1 1 1</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>1 1 0 1</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="Matahara">
+      <pose>252 0 0 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>1 1 1</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0 1 1 1</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="Asella">
+      <pose>158 -78 0 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>1 1 1</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>1 0 1 1</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="Batu">
+      <pose>320 0 0 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>1 1 1</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.5 0.5 0.5 1</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="Wolkite">
+      <pose>207 115 0 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>1 1 1</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.5 0.5 0 1</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
