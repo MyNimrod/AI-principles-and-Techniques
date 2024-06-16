@@ -213,3 +213,291 @@
         </visual>
       </link>
     </model>
+	
+
+    <model name="Worabe">
+      <pose>207 207 0 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>1 1 1</size>
+          </geometry>
+          <material>
+            <ambient>1 0 1 1</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="Jimma">
+      <pose>360 115 0 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>1 1 1</size>
+          </geometry>
+          <material>
+            <ambient>1 0 0.5 1</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="Bedelle">
+      <pose>0 543 0 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>1 1 1</size>
+          </geometry>
+          <material>
+            <ambient>1 0.5 1 1</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="Gimbi">
+      <pose>112 548 0 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>1 1 1</size>
+          </geometry>
+          <material>
+            <ambient>0.5 1 1 1</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+	<model name="Awash">
+      <pose>252 0 0 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>1 1 1</size>
+          </geometry>
+          <material>
+            <ambient>0 0.5 0.5 1</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="Chiro">
+      <pose>356 0 0 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>1 1 1</size>
+          </geometry>
+          <material>
+            <ambient>0 1 0.5 1</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="Dodolla">
+      <pose>492 0 0 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>1 1 1</size>
+          </geometry>
+          <material>
+            <ambient>1 1 0.5 1</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="Hawassa">
+      <pose>476 0 0 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>1 1 1</size>
+          </geometry>
+          <material>
+            <ambient>1 0 0.5 1</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="Hossana">
+      <pose>133 0 0 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>1 1 1</size>
+          </geometry>
+          <material>
+            <ambient>1 0.5 0.5 1</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="Wolaita_Sodo">
+      <pose>461 0 0 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>1 1 1</size>
+          </geometry>
+          <material>
+            <ambient>0.5 1 0.5 1</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="Bonga">
+      <pose>360 115 0 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>1 1 1</size>
+          </geometry>
+          <material>
+            <ambient>0.5 0.5 1 1</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="Gore">
+      <pose>360 0 0 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>1 1 1</size>
+          </geometry>
+          <material>
+            <ambient>0.5 0 0 1</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="Dambidollo">
+      <pose>112 0 0 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>1 1 1</size>
+          </geometry>
+          <material>
+            <ambient>1 0.5 0 1</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+	<model name="Chiro">
+      <pose>356 0 0 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>1 1 1</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0 1 0.5 1</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="Dire_Dawa">
+      <pose>460 0 0 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>1 1 1</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>1 1 0 1</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="Bale_Robe">
+      <pose>492 0 0 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>1 1 1</size>
+          </geometry>
+          <material>
+            <ambient>0.5 1 0 1</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="Dilla">
+      <pose>476 0 0 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>1 1 1</size>
+          </geometry>
+          <material>
+            <ambient>0 0.5 0.5 1</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="Dawro">
+      <pose>133 0 0 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>1 1 1</size>
+          </geometry>
+          <material>
+            <ambient>1 0.5 0.5 1</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="Tepi">
+      <pose>461 0 0 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>1 1 1</size>
+          </geometry>
+          <material>
+            <ambient>1 0 1 1</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+
