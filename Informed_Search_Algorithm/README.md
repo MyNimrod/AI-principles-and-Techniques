@@ -33,6 +33,9 @@ cd AI-principles-and-Techniques/Informed_Search_Algorithm/
 4. Run the program with the following command:
 
 python3 A_star_search.py
+     
+         OR
+Open A_Star_Search.ipynb using Jupyter Notebook
 
 5. Follow the on-screen instructions to input the starting and destination cities.
 
