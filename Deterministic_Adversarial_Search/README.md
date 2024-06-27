@@ -1,5 +1,3 @@
-Sure! Here's a sample `README.md` file for the GitHub repository, which includes how to play the tic-tac-toe game and the chess AI, as well as information on the lab report.
-
 ```markdown
 # AI Game Algorithms
 
@@ -27,7 +25,6 @@ Additionally, it includes a comprehensive lab report detailing the methodologies
 
 Clone the repository:
 
-	```bash
 	git clone https://github.com/MyNimrod/AI-principles-and-Techniques.git
 	cd Deterministic_Adversarial_Search
 	```
