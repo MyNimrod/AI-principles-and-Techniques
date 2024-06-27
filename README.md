@@ -25,3 +25,10 @@
 - Enclosed a Model of a search problem, Traveling Ethiopia. 
 - Write a working class that accept any strategy and Traveling Ethiopia problem, and return with a path/s from the initial state to the goal state/s. 
 - Use any programming language
+
+## Deterministic Adverserial Search
+
+- Implement the minimax algorithm for the game of tic-tac-toe.
+- Extend the minimax algorithm to handle heuristic evaluation functions.
+- Implement alpha-beta pruning in the minimax algorithm for the game of chess.
+
