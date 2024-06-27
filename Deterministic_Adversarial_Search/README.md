@@ -27,10 +27,10 @@ Additionally, it includes a comprehensive lab report detailing the methodologies
 
 Clone the repository:
 
-```bash
-git clone https://github.com/yourusername/ai-game-algorithms.git
-cd ai-game-algorithms
-```
+	```bash
+	git clone https://github.com/MyNimrod/AI-principles-and-Techniques.git
+	cd Deterministic_Adversarial_Search
+	```
 
 Install the required dependencies:
 
@@ -44,17 +44,11 @@ pip install -r requirements.txt
 
 To play the Tic-Tac-Toe game using the Minimax algorithm:
 
-1. Navigate to the `tic_tac_toe` directory:
-
-    ```bash
-    cd tic_tac_toe
-    ```
-
-2. Run the game:
+1. Run the game:
 
     ```bash
     python play_tic_tac_toe.py
     ```
 
-3. Follow the on-screen instructions to play against the AI.
+2. Follow the on-screen instructions to play against the AI.
 
