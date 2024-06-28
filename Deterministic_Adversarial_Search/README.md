@@ -1,4 +1,3 @@
-```markdown
 # AI Game Algorithms
 
 ## Overview
@@ -18,8 +17,6 @@ Additionally, it includes a comprehensive lab report detailing the methodologies
   - [Tic-Tac-Toe](#tic-tac-toe)
   - [Chess](#chess)
 - [Lab Report](#lab-report)
-- [Future Work](#future-work)
-- [References](#references)
 
 ## Installation
 
@@ -68,4 +65,27 @@ To play the Chess game using the Minimax algorithm with Alpha-Beta Pruning:
 	python play_chess.py
 
 3. The game will start with the user playing as White and the AI playing as Black. Make your moves by entering standard chess notation (e.g., e2e4).
+
+### Lab Report
+
+The repository includes a detailed lab report covering the following sections:
+
+1. Introduction: Overview of the lab assignment, objectives, and goals.
+2. Problem Statement: Definition of the problem and constraints.
+3. Background / Literature Review: Relevant information and context.
+4. Methodology or Algorithm Description: Explanation of the algorithms used, including pseudocode.
+5. Implementation Details: Technical details of the implementation.
+6. Experimental Setup: Datasets, test cases, and experiments conducted.
+7. Results: Findings of the experiments with tables and charts.
+8. Analysis: Interpretation of results and performance analysis.
+9. Discussion: Implications of results and any unexpected outcomes.
+10. Conclusion: Summary of main findings and significance.
+11. Future Work: Suggestions for enhancements and further research.
+12. References: List of external sources and citations.
+13. Appendix: Additional supporting materials.
+
+The full lab report is available in the Lab_Report.md file.
+
+
+
 
