@@ -5,7 +5,7 @@
 This repository contains a Python program that solves the travelling problem in Ethiopia using the A* search algorithm. The problem is similar to the traveling salesman problem, but it considers the map of Ethiopia and finds the optimal path from a starting city to a destination city.
 
 ## Assignment Question
-
+![Alt text](Traveling_Ethiopia.jpg)
 - Enclosed a Model of a search problem, Traveling Ethiopia. 
 - Write a working class that accept any strategy and Traveling Ethiopia problem, and return with a path/s from the initial state to the goal state/s. 
 ## Features
